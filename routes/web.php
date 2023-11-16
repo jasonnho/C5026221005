@@ -72,3 +72,17 @@ Route::get('javascript2', function () {
 Route::get('perkalian', 'App\Http\Controllers\DosenController@index');
 
 Route::get('biodata', 'App\Http\Controllers\DosenController@biodata');
+
+Route::get('formulir', 'App\Http\Controllers\DosenController@formulir');
+
+Route::post('/formulir/proses', 'App\Http\Controllers\DosenController@proses');
+
+Route::get('/blog', function () {
+    return view('home');
+});
+Route::get('/tentang', function () {
+    return view('tentang');
+});
+Route::get('/kontak', function () {
+    return view('kontak');
+});
