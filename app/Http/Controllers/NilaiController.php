@@ -11,25 +11,24 @@ class NilaiController extends Controller
 
     public function index()
 	{
-    	// mengambil data dari table pegawai
-		//$pegawai = DB::table('pegawai')->get();
+    	// mengambil data dari table nilaikuliah
         $nilaikuliah = DB::table('nilaikuliah')->get();
 
-    	// mengirim data pegawai ke view index
+    	// mengirim data nilaikuliah ke view index
 		return view('latihan15',['nilaikuliah' => $nilaikuliah]);
 
 	}
 
     public function store(Request $request)
 	{
-		// insert data ke table pegawai
+		// insert data ke table nilaikuliah
 		DB::table('nilaikuliah')->insert([
 			'nrp' => $request->NRP,
 			'nilaiangka' => $request->NilaiAngka,
 			'sks' => $request->SKS
 
 		]);
-		// alihkan halaman ke halaman pegawai
+		// alihkan halaman ke halaman nilaikuliah
 		return redirect('/latihan15');
 
 	}

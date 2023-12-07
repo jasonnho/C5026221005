@@ -11,25 +11,24 @@ class BelanjaController extends Controller
 
     public function index()
 	{
-    	// mengambil data dari table pegawai
-		//$pegawai = DB::table('pegawai')->get();
+    	// mengambil data dari table keraenjangbelanja
         $keranjangbelanja = DB::table('keranjangbelanja')->get();
 
-    	// mengirim data pegawai ke view index
+    	// mengirim data keraenjangbelanja ke view index
 		return view('latihan15p',['keranjangbelanja' => $keranjangbelanja]);
 
 	}
 
     public function store(Request $request)
 	{
-		// insert data ke table pegawai
+		// insert data ke table keraenjangbelanja
 		DB::table('keranjangbelanja')->insert([
 			'kodebarang' => $request->KodeBarang,
 			'jumlah' => $request->Jumlah,
 			'harga' => $request->Harga
 
 		]);
-		// alihkan halaman ke halaman pegawai
+		// alihkan halaman ke halaman keraenjangbelanja
 		return redirect('/latihan15p');
 
 	}
@@ -42,10 +41,10 @@ class BelanjaController extends Controller
 
     public function hapus($id)
 	{
-		// menghapus data pegawai berdasarkan id yang dipilih
+		// menghapus data keraenjangbelanja berdasarkan id yang dipilih
 		DB::table('keranjangbelanja')->where('id',$id)->delete();
 
-		// alihkan halaman ke halaman pegawai
+		// alihkan halaman ke halaman keraenjangbelanja
 		return redirect('/latihan15p');
 	}
 }
