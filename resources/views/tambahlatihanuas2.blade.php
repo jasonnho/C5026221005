@@ -6,12 +6,12 @@
     <h2><a href="https://www.malasngoding.com">Latihan Pertemuan 15</a></h2>
     <h3>Keranjang Belanja</h3>
 
-    <a href="/latihan15p" class="btn btn-primary"> Kembali</a>
+    <a href="/latihanuas2" class="btn btn-primary"> Kembali</a>
 
     <br />
     <br />
 
-    <form action="/latihan15p/store" method="post" class="form-horizontal">
+    <form action="/latihanuas2/store" method="post" class="form-horizontal">
         {{ csrf_field() }}
         <div class="form-group row">
             <label for="KodeBarang" class="col-sm-2 col-form-label">KodeBarang</label>

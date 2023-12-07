@@ -15,7 +15,7 @@ class NilaiController extends Controller
         $nilaikuliah = DB::table('nilaikuliah')->get();
 
     	// mengirim data nilaikuliah ke view index
-		return view('latihan15',['nilaikuliah' => $nilaikuliah]);
+		return view('latihanuas1',['nilaikuliah' => $nilaikuliah]);
 
 	}
 
@@ -29,13 +29,13 @@ class NilaiController extends Controller
 
 		]);
 		// alihkan halaman ke halaman nilaikuliah
-		return redirect('/latihan15');
+		return redirect('/latihanuas1');
 
 	}
 
     public function tambah()
 	{
 		// memanggil view tambah
-		return view('tambahlatihan');
+		return view('tambahlatihanuas1');
 	}
 }

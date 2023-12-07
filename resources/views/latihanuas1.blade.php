@@ -7,7 +7,7 @@
 	<h3>Nilai Kuliah</h3>
 
     <br/>
-	<a href="/latihan15/tambah" class="btn btn-primary"> + Tambah Nilai Baru</a>
+	<a href="/latihanuas1/tambah" class="btn btn-primary"> + Tambah Nilai Baru</a>
 
 	<br/>
 	<br/>

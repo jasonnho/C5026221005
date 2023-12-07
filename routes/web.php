@@ -98,13 +98,13 @@ Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 
 
-Route::get('/latihan15','App\Http\Controllers\NilaiController@index');
-Route::get('/latihan15/tambah','App\Http\Controllers\NilaiController@tambah');
-Route::post('/latihan15/store','App\Http\Controllers\NilaiController@store');
+Route::get('/latihanuas1','App\Http\Controllers\NilaiController@index');
+Route::get('/latihanuas1/tambah','App\Http\Controllers\NilaiController@tambah');
+Route::post('/latihanuas1/store','App\Http\Controllers\NilaiController@store');
 
-Route::get('/latihan15p','App\Http\Controllers\BelanjaController@index');
-Route::get('/latihan15p/tambah','App\Http\Controllers\BelanjaController@tambah');
-Route::post('/latihan15p/store','App\Http\Controllers\BelanjaController@store');
-Route::get('/latihan15p/hapus/{id}','App\Http\Controllers\BelanjaController@hapus');
+Route::get('/latihanuas2','App\Http\Controllers\BelanjaController@index');
+Route::get('/latihanuas2/tambah','App\Http\Controllers\BelanjaController@tambah');
+Route::post('/latihanuas2/store','App\Http\Controllers\BelanjaController@store');
+Route::get('/latihanuas2/hapus/{id}','App\Http\Controllers\BelanjaController@hapus');
 
 

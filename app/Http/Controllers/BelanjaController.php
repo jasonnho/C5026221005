@@ -15,7 +15,7 @@ class BelanjaController extends Controller
         $keranjangbelanja = DB::table('keranjangbelanja')->get();
 
     	// mengirim data keraenjangbelanja ke view index
-		return view('latihan15p',['keranjangbelanja' => $keranjangbelanja]);
+		return view('latihanuas2',['keranjangbelanja' => $keranjangbelanja]);
 
 	}
 
@@ -29,14 +29,14 @@ class BelanjaController extends Controller
 
 		]);
 		// alihkan halaman ke halaman keraenjangbelanja
-		return redirect('/latihan15p');
+		return redirect('/latihanuas2');
 
 	}
 
     public function tambah()
 	{
 		// memanggil view tambah
-		return view('tambahlatihanp');
+		return view('tambahlatihanuas2');
 	}
 
     public function hapus($id)
@@ -45,6 +45,6 @@ class BelanjaController extends Controller
 		DB::table('keranjangbelanja')->where('id',$id)->delete();
 
 		// alihkan halaman ke halaman keraenjangbelanja
-		return redirect('/latihan15p');
+		return redirect('/latihanuas2');
 	}
 }

@@ -7,7 +7,7 @@
 	<h3>Nilai Kuliah</h3>
 
     <br/>
-	<a href="/latihan15p/tambah" class="btn btn-primary"> + Beli Barang Baru</a>
+	<a href="/latihanuas2/tambah" class="btn btn-primary"> + Beli Barang Baru</a>
 
 	<br/>
 	<br/>
