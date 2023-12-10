@@ -19,10 +19,10 @@
         <!-- Links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 1</a>
+            <a class="nav-link" href="pegawai">Pegawai</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link 2</a>
+            <a class="nav-link" href="tugaspertemuan15">Tugas Pertemuan 15</a>
           </li>
 
           <!-- Dropdown -->
@@ -32,8 +32,7 @@
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="pegawai">Pegawai</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
+              <a class="dropdown-item" href="tugaspertemuan15">Tugas Pertemuan 15</a>
             </div>
           </li>
         </ul>

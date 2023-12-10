@@ -108,3 +108,10 @@ Route::post('/latihanuas2/store','App\Http\Controllers\BelanjaController@store')
 Route::get('/latihanuas2/hapus/{id}','App\Http\Controllers\BelanjaController@hapus');
 
 
+Route::get('/tugaspertemuan15','App\Http\Controllers\MejaController@index');
+Route::get('/tugaspertemuan15/tambah','App\Http\Controllers\MejaController@tambah');
+Route::post('/tugaspertemuan15/store','App\Http\Controllers\MejaController@store');
+Route::get('/tugaspertemuan15/edit/{id}','App\Http\Controllers\MejaController@edit');
+Route::post('/tugaspertemuan15/update','App\Http\Controllers\MejaController@update');
+Route::get('/tugaspertemuan15/hapus/{id}','App\Http\Controllers\MejaController@hapus');
+Route::get('/tugaspertemuan15/cari','App\Http\Controllers\MejaController@cari');
