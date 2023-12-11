@@ -4,14 +4,16 @@
 @section('konten')
     <div class="row">
         <div class="col">
+            <form action="/hasilcombo" method="get" class="form-horizontal">
                 <label for="position-option">Pilih Kategori</label>
-                <select class="form-control" id="Nama" name="ID">
+                <select class="form-control" name="cari">
                     @foreach ($kategori as $k)
-                        <option value="{{ $k->ID }}">{{ $k->Nama }}</option>
+                    <option value = "{{$k->Nama}}">{{$k->Nama}}</option>
                     @endforeach
                 </select>
                 <br>
-                <a href="/hasilcombo" class="btn btn-primary">Kirim</a>
+                <input type="submit" value="Kirim" class="btn btn-primary">
+            </form>
         </div>
         <div class="col">
         </div>

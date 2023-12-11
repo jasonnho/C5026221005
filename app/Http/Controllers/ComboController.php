@@ -19,12 +19,24 @@ class ComboController extends Controller
 
 	}
 
-    public function view($Nama)
+    public function cari(Request $request)
 	{
-		// mengambil data pegawai berdasarkan id yang dipilih
-		$kategori = DB::table('kategori')->where('Nama',$id)->get();
-		// passing data pegawai yang didapat ke view edit.blade.php
-		return view('hasilcombo',['kategori' => $kategori]);
+		// menangkap data pencarian
+		$cari = $request->cari;
+
+		$kategori = DB::table('kategori')
+		    ->where('Nama','like',"%".$cari."%")
+		    ->paginate();
+
+		return view('hasilcombo',['kategori' => $kategori, 'cari' => $cari]);
 
 	}
+
+    // public function parse(Request $request)
+    // {
+    //     		// mengambil data pegawai berdasarkan id yang dipilih
+	// 	$kategori = DB::table('kategori')->where('ID',$request->id)->get();
+	// 	// passing data pegawai yang didapat ke view edit.blade.php
+	// 	return redirect('hasilcombo/${kategori->id}');
+    // }
 }

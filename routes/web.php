@@ -117,4 +117,4 @@ Route::get('/tugaspertemuan15/hapus/{id}','App\Http\Controllers\MejaController@h
 Route::get('/tugaspertemuan15/cari','App\Http\Controllers\MejaController@cari');
 
 Route::get('/combo','App\Http\Controllers\ComboController@index');
-Route::get('/hasilcombo','App\Http\Controllers\ComboController@view');
+Route::get('/hasilcombo','App\Http\Controllers\ComboController@cari');
