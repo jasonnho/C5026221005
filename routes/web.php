@@ -115,3 +115,6 @@ Route::get('/tugaspertemuan15/edit/{id}','App\Http\Controllers\MejaController@ed
 Route::post('/tugaspertemuan15/update','App\Http\Controllers\MejaController@update');
 Route::get('/tugaspertemuan15/hapus/{id}','App\Http\Controllers\MejaController@hapus');
 Route::get('/tugaspertemuan15/cari','App\Http\Controllers\MejaController@cari');
+
+Route::get('/combo','App\Http\Controllers\ComboController@index');
+Route::get('/hasilcombo','App\Http\Controllers\ComboController@view');
